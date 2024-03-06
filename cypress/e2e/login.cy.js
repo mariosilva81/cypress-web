@@ -1,10 +1,10 @@
 /// <reference types="cypress"/>
 
-import { baseURL, user } from "../fixtures";
+import { user } from "../fixtures";
 
 describe("Login", () => {
   beforeEach("Access page", () => {
-    cy.visit(`${baseURL}/login`);
+    cy.visit("/login");
   })
 
   it("Successful login", () => {
